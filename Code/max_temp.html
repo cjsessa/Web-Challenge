@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Latitude with Attitude</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<div class="topnav" id="myTopnav">
+    <a href="home.html" class="active">Home</a>
+    <a href="data.html" class="active">Data</a>
+    <a href="comparison.html" class="active">Comparison</a>
+      <div class="dropdown">
+        <button class="dropbtn">Plots</button>
+        <div class="dropdown-content">
+          <a href="max_temp.html">Max Temperature</a>
+          <a href="humidity.html">Humidity</a>
+          <a href="cloudiness.html">Cloudiness</a>
+          <a href="windspeed.html">Wind Speed</a>
+        </div>
+      </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    </a>
+
+    
+<body>
+   
+    <div class="container">
+      <!--Normally these medium columns go full wide on small screen sizes-->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="box white">
+              <h2>Summary: Latitude and Temperature Changes</h2>
+              <img src = "../visualizations/lat_vs_temp.png"  ></img>
+                <p>
+                  We see the relationship between city latitude and max temperature to have a negative
+                  parabolic trend. This means that has the latitude increases, the temperature decreases
+                  with a decreasing rate. When applying a linear regression to this line, we found the r-square value
+                  to be low. 
+                  <br></br>
+                  For future analysis, it would be useful to apply a different type of model to better estimate
+                  the effect latitude has on maximum temperature.
+
+                </div>
+            </div>
+        </div>
+                
+          

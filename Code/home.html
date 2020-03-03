@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Latitude with Attitude</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<div class="topnav" id="myTopnav">
+    <a href="home.html" class="active">Home</a>
+    <a href="data.html" class="active">Data</a>
+    <a href="comparison.html" class="active">Comparison</a>
+      <div class="dropdown">
+        <button class="dropbtn">Plots</button>
+        <div class="dropdown-content">
+          <a href="max_temp.html">Max Temperature</a>
+          <a href="humidity.html">Humidity</a>
+          <a href="cloudiness.html">Cloudiness</a>
+          <a href="windspeed.html">Wind Speed</a>
+        </div>
+      </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    </a>
+
+<body>
+   
+  <div class="container">
+    <!--Normally these medium columns go full wide on small screen sizes-->
+    <div class="row">
+      <div class="col-md-8">
+        <div class="box white">
+            <h2>Summary: Latitude and Temperature Changes</h2>
+            <img style = "float:left"src = "../visualizations/lat_vs_temp.png" align = "left"  ></img>
+
+               <p>
+                The purpose of this project was to analyze how weather
+                changes as you get closer to the equator. To accomplish this analysis, we 
+                first pulled data from OpenWeatherMap API to assemble a cataset on 500 + cities
+                <br></br>
+                After assembling the dataset, we used Matplotlib to plot various aspects of the
+                weather vs. latitude. Factors we looked at included: temperature cloudiness, wind
+                speed, and humidity. This site provides the source data and visualizations created
+                as part of the analysis, as well as explanations and descriptions of any trens and
+                correlations witnessed.
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="box white">
+            <h3>Visualizations</h3>
+            </div>
+            
+            <div class = "col-md-2">
+                <div class = "box white">
+                    
+                    <img class = "resize" src = "../visualizations/lat_vs_hum.png"  ></img>
+
+                    <img class = "resize" src = "../visualizations/lat_vs_windsp.png"  ></img>
+                    
+                </div>
+            </div>
+
+            <div class = "col-md-2">
+                <div class = "box white">
+                       
+            <img src = "../visualizations/lat_vs_cloud.png"  ></img>
+
+            <img src = "../visualizations/lat_vs_temp.png"  ></img>
+    
+                </div>
+            </div>
+     </div>
+</div>
+         
+</body>
+
+</html>
