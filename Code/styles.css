@@ -50,8 +50,10 @@ h3 {
   color: rgb(94,206,181);
   text-align: center;
 }
+
+
 .dropbtn {
-  background-color: #5eceb5;
+  background-color: #fcfcfc;
   color: #fcfcfc);
   padding: 16px;
   font-size: 16px;
@@ -89,7 +91,7 @@ h3 {
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color:#5eceb5;}
+.dropdown:hover .dropbtn {background-color:#5eceb5; color: rgb(146, 144, 144)}
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
@@ -109,11 +111,11 @@ h3 {
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  background-color: rgb(94,206,181);
-  color: white;
+  background-color: rgb(249, 252, 251);
+  color: rgb(146, 144, 144);
 }
 /* Right-aligned section inside the top navigation */
-.topnav-right {
+.topnav-center {
   float: center;
 }
 /* Hide the link that should open and close the topnav on small screens */

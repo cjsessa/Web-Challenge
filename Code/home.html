@@ -4,12 +4,43 @@
 <head>
   <meta charset="UTF-8">
   <title>Latitude with Attitude</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Bootrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
 </head>
 
+<nav class="navbar topnav navbar-light navbar-expand" id="myTopnav" style="background-color: #fcfcfc;">
+  <a class = "navbar-brand" href = "./home.html" style = "background-color: #5eceb5;">Home</a>
+  <!-- Navbar content -->
+  <div class="dropdown">
+    <button class="dropbtn">Plots</button>
+    <div class="dropdown-content">
+      <a href="max_temp.html">Max Temperature</a>
+      <a href="humidity.html">Humidity</a>
+      <a href="cloudiness.html">Cloudiness</a>
+      <a href="windspeed.html">Wind Speed</a>
+    </div>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+  </a>
 
-<div class="topnav" id="myTopnav">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto nav ">
+      
+      <li class="nav-item active">
+        <a class="nav-link" href="./comparison.html">Comparison <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./data.html">Data</a>
+      </li>
+   
+    </ul>
+  </div>
+</nav>
+
+
+<!-- <div class="topnav" id="myTopnav">
     <a href="home.html" class="active">Home</a>
     <a href="data.html" class="active">Data</a>
     <a href="comparison.html" class="active">Comparison</a>
@@ -24,56 +55,80 @@
       </div>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     </a>
+</div> -->
 
 <body>
-   
+
   <div class="container">
     <!--Normally these medium columns go full wide on small screen sizes-->
     <div class="row">
+      <div class = "col-lg-12">
+        <h2></h2>
+      </div>
+      </div>
+    <div class="row">
       <div class="col-md-8">
         <div class="box white">
-            <h2>Summary: Latitude and Temperature Changes</h2>
-            <img style = "float:left"src = "../visualizations/lat_vs_temp.png" align = "left"  ></img>
+          <h2>Summary: Latitude and Temperature Changes</h2>
+          <img style="float:left" src="../visualizations/lat_vs_temp.png"></img>
 
-               <p>
-                The purpose of this project was to analyze how weather
-                changes as you get closer to the equator. To accomplish this analysis, we 
-                first pulled data from OpenWeatherMap API to assemble a cataset on 500 + cities
-                <br></br>
-                After assembling the dataset, we used Matplotlib to plot various aspects of the
-                weather vs. latitude. Factors we looked at included: temperature cloudiness, wind
-                speed, and humidity. This site provides the source data and visualizations created
-                as part of the analysis, as well as explanations and descriptions of any trens and
-                correlations witnessed.
+             <p>
+            The purpose of this project was to analyze how weather
+            changes as you get closer to the equator. To accomplish this analysis, we
+            first pulled data from OpenWeatherMap API to assemble a dataset on 500 + cities
+            <br></br>
+            After assembling the dataset, we used Matplotlib to plot various aspects of the
+            weather vs. latitude. Factors we looked at included: temperature cloudiness, wind
+            speed, and humidity. This site provides the source data and visualizations created
+            as part of the analysis, as well as explanations and descriptions of any trends and
+            correlations witnessed.
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 bg-white">
         <div class="box white">
-            <h3>Visualizations</h3>
-            </div>
-            
-            <div class = "col-md-2">
-                <div class = "box white">
-                    
-                    <img class = "resize" src = "../visualizations/lat_vs_hum.png"  ></img>
+          <h3>Visualizations</h3>
+        </div>
+        <div class="col-md-12">
+          <div class="row mt-4">
 
-                    <img class = "resize" src = "../visualizations/lat_vs_windsp.png"  ></img>
-                    
-                </div>
-            </div>
+              <a class='col-xl-6' href="./humidity.html"><img  src="../visualizations/lat_vs_hum.png"></img>
+              </a>
 
-            <div class = "col-md-2">
-                <div class = "box white">
-                       
-            <img src = "../visualizations/lat_vs_cloud.png"  ></img>
+                <a class='col-xl-6' href="./windspeed.html"><img  src="../visualizations/lat_vs_windsp.png"></img>
+                </a>
+          </div>
+        </div>
 
-            <img src = "../visualizations/lat_vs_temp.png"  ></img>
-    
-                </div>
+          <!-- </div> -->
+          <div class="col-md-12">
+          <div class="row mt-4">
+            <!-- <div class="box white"> -->
+
+              <a class='col-xl-6' href="./cloudiness.html"><img src="../visualizations/lat_vs_cloud.png"></img>
+              </a>
+
+             <a class='col-xl-6' href="./max_temp.html"> <img src="../visualizations/lat_vs_temp.png"></img>
+            </a>
+
             </div>
-     </div>
-</div>
-         
+            <!-- </div> -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>
