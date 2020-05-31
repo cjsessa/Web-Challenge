@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 
-
 <nav class="navbar topnav navbar-light navbar-expand" id="myTopnav" style="background-color: #fcfcfc;">
   <a class = "navbar-brand" href = "./index.html" style = "background-color: #5eceb5;">Home</a>
   <!-- Navbar content -->
@@ -37,22 +36,41 @@
     </ul>
   </div>
 </nav>
-    
+<div class="box white">
+  <h2>Comparison</h2>
+  <h3>Click on any plot to get in-depth analysis</h3>
 <body>
    
     <div class="container">
       <!--Normally these medium columns go full wide on small screen sizes-->
-      <div class="row">
-        <div class="col-md-12">
-          <div class="box white">
-              <h2>Summary: Latitude and Wind Speed</h2>
-              <img src = "./visualizations/lat_vs_windsp.png"  ></img>
-                <p>
-                We see no relationship between latitude and wind speed. The r-square value is 
-                near zero for this scatterplot confirming our visual inspection of the chart.
+      
+ 
+              <div class="col-md-12">
+                <div class="row mt-4">
+                  <!-- <div class="box white"> -->
+      
+                    <a class='col-lg-6' href="./humidity.html"><img  src="./visualizations/lat_vs_hum.png"></img>
+                    </a>
+      
+                      <a class='col-lg-6' href="./windspeed.html"><img  src="./visualizations/lat_vs_windsp.png"></img>
+                      </a>
+                      <div class="col-lg-12">
+                        <div class="row mt-4">
+                     
+                          <!-- <div class="box white"> -->
+              
+                            <a class='col-lg-6' href="./cloudiness.html"><img  src="../visualizations/lat_vs_cloud.png"></img>
+                            </a>
+              
+                              <a class='col-lg-6' href="./max_temp.html"><img  src="../visualizations/lat_vs_temp.png"></img>
+                              </a>
+                            </div>
 
                 </div>
             </div>
+          </div>
         </div>
+      </div>
+      
                 
           
